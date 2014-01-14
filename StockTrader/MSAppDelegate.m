@@ -7,7 +7,8 @@
 //
 
 #import "MSAppDelegate.h"
-
+#import "Finance.h"
+#import "Stock.h"
 @implementation MSAppDelegate
 
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
@@ -16,6 +17,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+	Stock *apple = [Finance getStock:@"aapl"];
+	NSLog(@"%@", apple.ask);
 	// Insert code here to initialize your application
 }
 

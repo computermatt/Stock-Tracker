@@ -19,6 +19,8 @@
 		C90411481885021500D370BB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90411241885021500D370BB /* Cocoa.framework */; };
 		C90411501885021500D370BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C904114E1885021500D370BB /* InfoPlist.strings */; };
 		C90411521885021500D370BB /* StockTraderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C90411511885021500D370BB /* StockTraderTests.m */; };
+		C9351BC2188503F4009D09BB /* Finance.m in Sources */ = {isa = PBXBuildFile; fileRef = C9351BC1188503F4009D09BB /* Finance.m */; };
+		C9351BC518850875009D09BB /* Stock.m in Sources */ = {isa = PBXBuildFile; fileRef = C9351BC418850875009D09BB /* Stock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,10 @@
 		C904114D1885021500D370BB /* StockTraderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StockTraderTests-Info.plist"; sourceTree = "<group>"; };
 		C904114F1885021500D370BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C90411511885021500D370BB /* StockTraderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockTraderTests.m; sourceTree = "<group>"; };
+		C9351BC0188503F4009D09BB /* Finance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Finance.h; sourceTree = "<group>"; };
+		C9351BC1188503F4009D09BB /* Finance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Finance.m; sourceTree = "<group>"; };
+		C9351BC318850875009D09BB /* Stock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stock.h; sourceTree = "<group>"; };
+		C9351BC418850875009D09BB /* Stock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 		C904112A1885021500D370BB /* StockTrader */ = {
 			isa = PBXGroup;
 			children = (
+				C9351BBF1885034A009D09BB /* YahooFinanceAPI */,
 				C90411361885021500D370BB /* MSAppDelegate.h */,
 				C90411371885021500D370BB /* MSAppDelegate.m */,
 				C90411391885021500D370BB /* MainMenu.xib */,
@@ -155,6 +162,17 @@
 				C904114E1885021500D370BB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9351BBF1885034A009D09BB /* YahooFinanceAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C9351BC0188503F4009D09BB /* Finance.h */,
+				C9351BC1188503F4009D09BB /* Finance.m */,
+				C9351BC318850875009D09BB /* Stock.h */,
+				C9351BC418850875009D09BB /* Stock.m */,
+			);
+			name = YahooFinanceAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,9 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9351BC2188503F4009D09BB /* Finance.m in Sources */,
 				C90411381885021500D370BB /* MSAppDelegate.m in Sources */,
 				C904113E1885021500D370BB /* StockTrader.xcdatamodeld in Sources */,
 				C90411311885021500D370BB /* main.m in Sources */,
+				C9351BC518850875009D09BB /* Stock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +489,7 @@
 				C90411571885021500D370BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C90411581885021500D370BB /* Build configuration list for PBXNativeTarget "StockTraderTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +498,7 @@
 				C904115A1885021500D370BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
