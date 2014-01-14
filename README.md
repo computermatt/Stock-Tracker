@@ -1,4 +1,4 @@
-Stock-Tracker
+Stock Tracker
 =============
 
 I want to track stocks quickly and easily and I can't find a program that I like, so I'm creating one.
